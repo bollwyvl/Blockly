@@ -1,4 +1,4 @@
-;(function(Blockly){
+;(function(){
 /**
  * Blockly Demo: Maze
  *
@@ -23,11 +23,13 @@
  * @author fraser@google.com (Neil Fraser)
  */
 'use strict';
+var window = this,
+    document = window.document;
 
 /**
  * Create a namespace for the maze.
  */
-var Maze = {};
+var Maze = window.Maze = {};
 
 /**
  * Milliseconds between each animation frame.
@@ -743,4 +745,4 @@ Maze.isWall = function(direction) {
   return square == 0;
 };
 
-}).call(this, Blockly);
+}).call(this);
