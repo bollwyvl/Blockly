@@ -2,8 +2,6 @@
 <head>
   <meta charset="utf-8">
   <title>Blockly Demo: Block Factory Preview</title>
-  <script type="text/javascript" src="../blockly_compressed.js"></script>
-  <script type="text/javascript" src="../../language/en/_messages.js"></script>
   <style>
     html, body {
       background-color: #fff;
@@ -16,20 +14,26 @@
       width: 100%;
     }
   </style>
-  <script>
-    function init() {
-      Blockly.Language = {};
-      delete Blockly.Trashcan;
-      delete Blockly.Toolbox;
-      Blockly.inject(document.body, {path: '../../', readonly: true});
-
-      if (window.parent.initPreview) {
-        // Let the top-level application know that Blockly is ready.
-        window.parent.initPreview(Blockly);
-      }
-    }
-  </script>
 </head>
-<body onload="init()">
+<body>
+
+    <script type="text/javascript" src="../blockly_compressed.js"></script>
+    <script type="text/javascript" src="../../language/en/_messages.js"></script>
+    <script>
+      ;(function(Blockly){
+        'use strict';
+        var window = this,
+            document = window.document;
+        Blockly.Language = {};
+        delete Blockly.Trashcan;
+        delete Blockly.Toolbox;
+        Blockly.inject(document.body, {path: '../../', readonly: true});
+
+        if (window.parent.initPreview) {
+          // Let the top-level application know that Blockly is ready.
+          window.parent.initPreview(Blockly);
+        }
+      }).call(this, Blockly);
+    </script>
 </body>
 </html>

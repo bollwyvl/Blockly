@@ -1,4 +1,5 @@
-;(function(Blockly){
+;(function(){
+'use strict';
 /**
  * Visual Blocks Language
  *
@@ -22,7 +23,9 @@
  * @fileoverview Factory for building blocks.
  * @author fraser@google.com (Neil Fraser)
  */
-'use strict';
+
+ var window = this,
+     document = window.document;
 
 /**
  * The uneditable container block that everything else attaches to.
@@ -52,6 +55,7 @@ function initPreview(blockly) {
     updatePreview();
   }
 }
+window.initPreview = initPreview;
 
 /**
  * Initialize Blockly.  Called on page load.
@@ -74,6 +78,7 @@ function initEditor(blockly) {
   EditorBlockly.bindEvent_(EditorBlockly.mainWorkspace.getCanvas(),
       'blocklyWorkspaceChange', null, onchange);
 }
+window.initEditor = initEditor;
 
 /**
  * When the workspace changes, update the three other displays.
@@ -399,4 +404,4 @@ function updatePreview() {
 }
 
 
-}).call(this, Blockly);
+}).call(this);

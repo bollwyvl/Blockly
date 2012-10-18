@@ -24,6 +24,9 @@
  */
 'use strict';
 
+var window = this,
+    document = window.document;
+
 if (!Blockly.Language) Blockly.Language = {};
 
 Blockly.Language.factory_base = {
@@ -642,7 +645,7 @@ function titleNameCheck(referenceBlock) {
  */
 function inputNameCheck(referenceBlock) {
   var name = referenceBlock.getTitleValue('INPUTNAME').toLowerCase();
-  count = 0;
+  var count = 0;
   var blocks = referenceBlock.workspace.getAllBlocks();
   for (var x = 0, block; block = blocks[x]; x++) {
     var otherName = block.getTitleValue('INPUTNAME');
