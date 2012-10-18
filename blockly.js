@@ -27,7 +27,7 @@
 var window = this;
 
 // Top level object for Blockly.
-var Blockly = {};
+var Blockly = window.Blockly = {};
 
 /**
  * Path to Blockly's directory.  Can be relative, absolute, or remote.
