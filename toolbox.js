@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -293,3 +294,5 @@ Blockly.Toolbox.clearSelection = function() {
   }
   Blockly.Toolbox.flyout_.hide();
 };
+
+}).call(this, Blockly);

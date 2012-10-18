@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -260,3 +261,5 @@ Blockly.FieldTextInput.prototype.closeEditor_ = function(save) {
   Blockly.FieldTextInput.destroyDom_();
   this.sourceBlock_.render();
 };
+
+}).call(this, Blockly);

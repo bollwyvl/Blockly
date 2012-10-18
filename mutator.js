@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -449,3 +450,5 @@ Blockly.Mutator.prototype.computeIconLocation = function() {
 Blockly.Mutator.prototype.getIconLocation = function() {
   return {x: this.iconX_, y: this.iconY_};
 };
+
+}).call(this, Blockly);

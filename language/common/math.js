@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -330,3 +331,5 @@ Blockly.Language.math_random_float = {
     this.setTooltip(Blockly.LANG_MATH_RANDOM_FLOAT_TOOLTIP_1);
   }
 };
+
+}).call(this, Blockly);

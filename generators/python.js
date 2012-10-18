@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -185,3 +186,5 @@ Blockly.Python.scrub_ = function(block, code) {
   var nextCode = this.blockToCode(nextBlock);
   return commentCode + code + nextCode;
 };
+
+}).call(this, Blockly);

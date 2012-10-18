@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -40,3 +41,5 @@ Blockly.JavaScript.variables_set = function() {
       this.getTitleValue('VAR'), Blockly.Variables.NAME_TYPE);
   return varName + ' = ' + argument0 + ';\n';
 };
+
+}).call(this, Blockly);

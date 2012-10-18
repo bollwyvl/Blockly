@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -203,3 +204,5 @@ Blockly.ContextMenu.hide = function() {
     Blockly.ContextMenu.visible = false;
   }
 };
+
+}).call(this, Blockly);

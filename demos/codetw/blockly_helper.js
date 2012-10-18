@@ -1,3 +1,5 @@
+;(function(){
+var window = this;
 /**
  * Execute the user's code.
  * Just a quick and dirty eval.  No checks for infinite loops, etc.
@@ -56,13 +58,14 @@ function load(event) {
   }
 
   // FileReader
-  var reader = new FileReader();
+  var reader = new FileReader(),
+      xml;
   reader.onloadend = function(event) {
     var target = event.target;
     // 2 == FileReader.DONE
     if (target.readyState == 2) {
       try {
-        var xml = Blockly.Xml.textToDom(target.result);
+        xml = Blockly.Xml.textToDom(target.result);
       } catch (e) {
         alert('Error parsing XML:\n' + e);
         return;
@@ -85,7 +88,7 @@ function load(event) {
  */
 function discard() {
   var count = Blockly.mainWorkspace.getAllBlocks().length;
-  if (count < 2 || window.confirm('刪除現有的 ' + count + ' 個積木?')) {
+  if (count < 2 || window.confirm('Delete all ' + count + ' blocks?')) {
     Blockly.mainWorkspace.clear();
     renderContent();
   }
@@ -110,3 +113,6 @@ function auto_save_and_restore_blocks() {
     loadInput.click();
   };
 }
+window.auto_save_and_restore_blocks = auto_save_and_restore_blocks;
+
+}).call(this);

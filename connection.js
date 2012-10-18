@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -749,3 +750,5 @@ Blockly.ConnectionDB.init = function(workspace) {
   dbList[Blockly.PREVIOUS_STATEMENT] = new Blockly.ConnectionDB();
   workspace.connectionDBList = dbList;
 };
+
+}).call(this, Blockly);

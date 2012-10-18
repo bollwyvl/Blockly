@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -364,3 +365,5 @@ Blockly.JavaScript.math_random_float = function() {
   // Random fraction between 0 and 1.
   return ['Math.random()', Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
+
+}).call(this, Blockly);

@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -70,3 +71,5 @@ Blockly.Dart.logic_boolean = function() {
   var code = (this.getTitleValue('BOOL') == 'TRUE') ? 'true' : 'false';
   return [code, Blockly.Dart.ORDER_ATOMIC];
 };
+
+}).call(this, Blockly);

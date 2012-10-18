@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -123,3 +124,5 @@ Blockly.Language.logic_boolean = {
 Blockly.Language.logic_boolean.OPERATORS =
     [[Blockly.LANG_LOGIC_BOOLEAN_TRUE, 'TRUE'],
      [Blockly.LANG_LOGIC_BOOLEAN_FALSE, 'FALSE']];
+
+}).call(this, Blockly);

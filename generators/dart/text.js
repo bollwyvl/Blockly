@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -219,3 +220,5 @@ Blockly.Dart.text_prompt = function() {
   }
   return [code, Blockly.Dart.ORDER_UNARY_POSTFIX];
 };
+
+}).call(this, Blockly);

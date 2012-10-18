@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -387,3 +388,5 @@ Blockly.Comment.prototype.computeIconLocation = function() {
 Blockly.Comment.prototype.getIconLocation = function() {
   return {x: this.iconX_, y: this.iconY_};
 };
+
+}).call(this, Blockly);

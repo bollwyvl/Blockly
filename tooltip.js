@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -257,3 +258,5 @@ Blockly.Tooltip.show_ = function() {
   Blockly.Tooltip.svgGroup_.setAttribute('transform',
       'translate(' + anchorX + ',' + anchorY + ')');
 };
+
+}).call(this, Blockly);

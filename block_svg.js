@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -1043,3 +1044,5 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps, highlightSteps,
   }
   steps.push('z');
 };
+
+}).call(this, Blockly);

@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -232,3 +233,5 @@ Blockly.Field.prototype.onMouseUp_ = function(e) {
 Blockly.Field.prototype.setTooltip = function(newTip) {
   // Non-abstract sub-classes may wish to implement this.  See FieldLabel.
 };
+
+}).call(this, Blockly);

@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -201,3 +202,5 @@ Blockly.CodeGenerator.prototype.statementToCode = function(block, name) {
   }
   return code;
 };
+
+}).call(this, Blockly);

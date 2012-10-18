@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -536,3 +537,5 @@ Blockly.Bubble.prototype.destroy = function() {
   this.bubbleGroup_ = null;
   this.content_ = null;
 };
+
+}).call(this, Blockly);

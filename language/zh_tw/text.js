@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -42,3 +43,5 @@ Blockly.Language.text_charAt = {
     this.setTooltip(Blockly.LANG_TEXT_CHARAT_TOOLTIP_1);
   }
 };
+
+}).call(this, Blockly);

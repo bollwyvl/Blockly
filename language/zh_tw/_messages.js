@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -403,3 +404,5 @@ Blockly.LANG_PROCEDURES_MUTATORCONTAINER_TITLE = '參數';
 Blockly.LANG_PROCEDURES_MUTATORARG_TITLE = '變量:';
 
 Blockly.LANG_PROCEDURES_HIGHLIGHT_DEF = 'Highlight Procedure';
+
+}).call(this, Blockly);

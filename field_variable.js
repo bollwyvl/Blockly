@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -121,3 +122,5 @@ Blockly.FieldVariable.dropdownChange = function(text) {
   }
   window.setTimeout(Blockly.Variables.refreshFlyoutCategory, 1);
 };
+
+}).call(this, Blockly);

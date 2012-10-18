@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -105,3 +106,5 @@ Blockly.JavaScript.lists_setIndex = function() {
   }
   return argument1 + '[' + argument0 + '] = ' + argument2 + ';\n';
 };
+
+}).call(this, Blockly);

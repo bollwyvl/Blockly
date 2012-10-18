@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -137,3 +138,5 @@ Blockly.Python.controls_flow_statements = function() {
   }
   throw 'Unknown flow statement.';
 };
+
+}).call(this, Blockly);

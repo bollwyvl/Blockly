@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -393,3 +394,5 @@ Blockly.Language.procedures_callreturn = {
   renameVar: Blockly.Language.procedures_callnoreturn.renameVar,
   customContextMenu: Blockly.Language.procedures_callnoreturn.customContextMenu
 };
+
+}).call(this, Blockly);

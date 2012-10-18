@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -293,3 +294,5 @@ Blockly.Workspace.prototype.paste = function(xmlBlock) {
   }
   block.select();
 };
+
+}).call(this, Blockly);

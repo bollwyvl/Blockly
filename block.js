@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -1460,3 +1461,5 @@ Blockly.Block.prototype.setWarningText = function(text) {
 Blockly.Block.prototype.render = function() {
   this.svg_.render();
 };
+
+}).call(this, Blockly);

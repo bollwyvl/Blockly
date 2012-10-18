@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Blockly Demo: Maze
  *
@@ -741,3 +742,5 @@ Maze.isWall = function(direction) {
   }
   return square == 0;
 };
+
+}).call(this, Blockly);

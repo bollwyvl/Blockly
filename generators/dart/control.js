@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -125,3 +126,5 @@ Blockly.Dart.controls_flow_statements = function() {
   }
   throw 'Unknown flow statement.';
 };
+
+}).call(this, Blockly);

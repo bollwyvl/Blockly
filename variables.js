@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -189,3 +190,5 @@ Blockly.Variables.generateUniqueName = function() {
   }
   return newName;
 };
+
+}).call(this, Blockly);

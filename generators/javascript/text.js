@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -214,3 +215,5 @@ Blockly.JavaScript.text_prompt = function() {
   }
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
+
+}).call(this, Blockly);

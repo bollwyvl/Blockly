@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -422,3 +423,5 @@ Blockly.Dart.math_random_float = function() {
   // Random fraction between 0 and 1.
   return ['new Math.Random().nextDouble()', Blockly.Dart.ORDER_UNARY_POSTFIX];
 };
+
+}).call(this, Blockly);

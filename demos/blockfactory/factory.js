@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -397,3 +398,5 @@ function updatePreview() {
   previewBlock.editable = false;
 }
 
+
+}).call(this, Blockly);

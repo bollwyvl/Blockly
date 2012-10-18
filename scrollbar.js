@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -924,3 +925,5 @@ Blockly.Scrollbar.insertAfter_ = function(newNode, refNode) {
   }
 };
 
+
+}).call(this, Blockly);

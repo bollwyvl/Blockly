@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -93,3 +94,5 @@ Blockly.Python.procedures_callnoreturn = function() {
   var code = funcName + '(' + args.join(', ') + ')\n';
   return code;
 };
+
+}).call(this, Blockly);

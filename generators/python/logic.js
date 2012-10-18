@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -69,3 +70,5 @@ Blockly.Python.logic_boolean = function() {
   var code = (this.getTitleValue('BOOL') == 'TRUE') ? 'True' : 'False';
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
+
+}).call(this, Blockly);

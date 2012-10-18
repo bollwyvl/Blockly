@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -371,3 +372,5 @@ Blockly.Xml.deleteNext = function(xmlBlock) {
     }
   }
 };
+
+}).call(this, Blockly);

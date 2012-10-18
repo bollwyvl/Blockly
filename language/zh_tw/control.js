@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -62,3 +63,5 @@ Blockly.Language.controls_for = {
     }
   }
 };
+
+}).call(this, Blockly);

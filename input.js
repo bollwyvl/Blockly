@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -117,3 +118,5 @@ Blockly.Input.prototype.destroy = function() {
   }
   this.sourceBlock_ = null;
 };
+
+}).call(this, Blockly);

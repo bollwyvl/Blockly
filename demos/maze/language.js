@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Blockly Demo: Maze
  *
@@ -170,3 +171,5 @@ Blockly.JavaScript.controls_whileUntil = function() {
   return 'while (' + argument0 + ') {\n' + branch0 +
       '  Maze.checkTimeout("' + this.id + '");\n}\n';
 };
+
+}).call(this, Blockly);

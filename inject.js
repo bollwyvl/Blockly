@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -226,3 +227,5 @@ Blockly.init_ = function() {
   Blockly.loadAudio_('click');
   Blockly.loadAudio_('delete');
 };
+
+}).call(this, Blockly);

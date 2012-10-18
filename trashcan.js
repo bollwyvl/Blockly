@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -241,3 +242,5 @@ Blockly.Trashcan.animateLid_ = function(trashcan) {
 Blockly.Trashcan.close = function(trashcan) {
   trashcan.setOpen_(false);
 };
+
+}).call(this, Blockly);

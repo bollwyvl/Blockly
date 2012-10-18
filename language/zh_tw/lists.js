@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -65,3 +66,5 @@ Blockly.Language.lists_setIndex = {
     this.setTooltip(Blockly.LANG_LISTS_SET_INDEX_TOOLTIP_1);
   }
 };
+
+}).call(this, Blockly);

@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -253,3 +254,5 @@ Blockly.Procedures.mutateCallers = function(name, workspace,
     callers[x].setProcedureParameters(paramNames, paramIds);
   }
 };
+
+}).call(this, Blockly);

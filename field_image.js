@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -126,3 +127,5 @@ Blockly.FieldImage.prototype.setText = function(src) {
   this.imageElement_.setAttributeNS('http://www.w3.org/1999/xlink',
       'xlink:href', src);
 };
+
+}).call(this, Blockly);

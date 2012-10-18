@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -346,3 +347,5 @@ Blockly.Flyout.createBlockFunc_ = function(flyout, originBlock) {
     block.onMouseDown_(e);
   };
 };
+
+}).call(this, Blockly);

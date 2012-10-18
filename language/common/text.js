@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Language
  *
@@ -386,3 +387,5 @@ Blockly.Language.text_prompt = {
 Blockly.Language.text_prompt.TYPES =
     [[Blockly.LANG_TEXT_PROMPT_TYPE_TEXT, 'TEXT'],
      [Blockly.LANG_TEXT_PROMPT_TYPE_NUMBER, 'NUMBER']];
+
+}).call(this, Blockly);

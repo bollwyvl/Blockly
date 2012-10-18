@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -260,3 +261,5 @@ Blockly.FieldDropdown.hideMenu = function() {
   Blockly.FieldDropdown.svgGroup_.style.display = 'none';
   Blockly.FieldDropdown.openDropdown_ = null;
 };
+
+}).call(this, Blockly);

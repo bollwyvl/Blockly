@@ -1,3 +1,4 @@
+;(function(Blockly){
 /**
  * Visual Blocks Editor
  *
@@ -328,3 +329,5 @@ Blockly.mouseToSvg = function(x, y) {
   var matrix = Blockly.svg.getScreenCTM().inverse();
   return svgPoint = svgPoint.matrixTransform(matrix);
 };
+
+}).call(this, Blockly);
