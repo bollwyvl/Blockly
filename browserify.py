@@ -1,16 +1,12 @@
 import sh
 
 def browserify():
-    possible = sh.find(
-        ".",
-        "-name",
-        "*.js",
-        "!",
-        "-name",
-        "'*.min.js'",
-        "!",
-        "-name",
-        "'blockly.js'")
+    possible = [
+        fname.strip()
+        for fname in sh.find(".", "-name", "*.js")
+        if not fname.strip().endswith("min.js")
+            and fname.strip() != "./blockly.js"
+    ]
         
     for fname in possible:
         js = file(fname.strip(), "r")
