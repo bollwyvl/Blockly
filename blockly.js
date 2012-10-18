@@ -21,7 +21,10 @@
  * @fileoverview Core JavaScript library for Blockly.
  * @author fraser@google.com (Neil Fraser)
  */
+;(function(){
 'use strict';
+
+var window = this;
 
 // Top level object for Blockly.
 var Blockly = {};
@@ -587,3 +590,4 @@ Blockly.setMainWorkspaceMetrics = function(xyRatio) {
 Blockly.cssLoaded = function() {
   Blockly.Toolbox && Blockly.Toolbox.redraw();
 };
+}).call(this);

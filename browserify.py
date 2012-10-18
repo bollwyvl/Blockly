@@ -1,11 +1,18 @@
 import sh
 
+
+
 def browserify():
+    ignore = [
+        "./blockly.js",
+        "./demos/blockly_compressed.js",
+        "./demos/blockly_uncompressed.js",
+    ]
     possible = [
         fname.strip()
         for fname in sh.find(".", "-name", "*.js")
         if not fname.strip().endswith("min.js")
-            and fname.strip() != "./blockly.js"
+            and fname.strip() not in ignore
     ]
         
     for fname in possible:
